@@ -1,0 +1,50 @@
+uuid: 16bc53f6-6f16-4bec-bab7-cd5a348d5a87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.salary_processing.field_employee
+    - field.field.node.salary_processing.field_is_processed
+    - field.field.node.salary_processing.field_salary_date
+    - node.type.salary_processing
+  module:
+    - datetime
+    - user
+id: node.salary_processing.default
+targetEntityType: node
+bundle: salary_processing
+mode: default
+content:
+  field_employee:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_is_processed:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_salary_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

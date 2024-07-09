@@ -1,0 +1,55 @@
+uuid: 6ff28d07-505c-4c05-9894-c90d210516c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.webform_default
+    - node.type.leave
+  module:
+    - comment
+    - contact
+    - field_permissions
+    - file
+    - filter
+    - node
+    - search
+    - shortcut
+    - system
+    - toolbar
+_core:
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
+id: authenticated
+label: Employee
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access content overview'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access toolbar'
+  - 'create field_leave_date'
+  - 'create field_reason'
+  - 'create leave content'
+  - 'delete own files'
+  - 'delete own leave content'
+  - 'edit own field_leave_date'
+  - 'edit own field_reason'
+  - 'edit own leave content'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'use text format webform_default'
+  - 'view field_designation'
+  - 'view field_is_processed'
+  - 'view own field_basic_pay'
+  - 'view own field_designation'
+  - 'view own field_hra'
+  - 'view own field_is_approved'
+  - 'view own field_is_processed'
+  - 'view own field_leave_date'
+  - 'view own field_reason'
+  - 'view own field_special_allowance'

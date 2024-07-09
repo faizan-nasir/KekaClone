@@ -1,0 +1,50 @@
+uuid: bf183414-ce43-49ec-a3a1-1e7b140253ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.leave.field_is_approved
+    - field.field.node.leave.field_leave_date
+    - field.field.node.leave.field_reason
+    - node.type.leave
+  module:
+    - datetime
+    - text
+    - user
+id: node.leave.default
+targetEntityType: node
+bundle: leave
+mode: default
+content:
+  field_is_approved:
+    type: boolean
+    label: above
+    settings:
+      format: yes-no
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_leave_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_reason:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

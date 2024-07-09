@@ -1,0 +1,41 @@
+uuid: 687638a4-9621-4586-ae1f-e173f81f3fc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_basic_pay
+    - field.field.user.user.field_designation
+    - field.field.user.user.field_hra
+    - field.field.user.user.field_social_links
+    - field.field.user.user.field_special_allowance
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_basic_pay: true
+  field_designation: true
+  field_hra: true
+  field_social_links: true
+  field_special_allowance: true
+  member_for: true
