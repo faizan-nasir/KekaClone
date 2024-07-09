@@ -1,0 +1,47 @@
+uuid: 233b7ff4-2311-4169-8702-2f16496fea1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.leave
+    - node.type.salary_processing
+  module:
+    - field_permissions
+    - node
+    - toolbar
+id: hr
+label: HR
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer permissions'
+  - 'administer users'
+  - 'create field_is_approved'
+  - 'create field_is_processed'
+  - 'create salary_processing content'
+  - 'delete own salary_processing content'
+  - 'edit any leave content'
+  - 'edit any salary_processing content'
+  - 'edit field_basic_pay'
+  - 'edit field_designation'
+  - 'edit field_hra'
+  - 'edit field_is_approved'
+  - 'edit field_is_processed'
+  - 'edit field_special_allowance'
+  - 'edit own field_is_approved'
+  - 'edit own field_is_processed'
+  - 'edit own salary_processing content'
+  - 'view field_basic_pay'
+  - 'view field_designation'
+  - 'view field_hra'
+  - 'view field_is_approved'
+  - 'view field_is_processed'
+  - 'view field_special_allowance'
+  - 'view own field_basic_pay'
+  - 'view own field_designation'
+  - 'view own field_hra'
+  - 'view own field_is_approved'
+  - 'view own field_is_processed'
+  - 'view own field_special_allowance'

@@ -1,0 +1,14 @@
+uuid: 9380e1e2-add0-470f-9036-483f62c64359
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hr
+  module:
+    - user
+id: user_remove_role_action.hr
+label: 'Remove the HR role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hr

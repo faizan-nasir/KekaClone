@@ -1,0 +1,18 @@
+uuid: b61e3f50-dd74-45ed-aa51-ddb98147688a
+langcode: en
+status: true
+dependencies: {  }
+id: dev
+label: dev
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/split/dev
+module:
+  webform_ui: 0
+theme: {  }
+complete_list:
+  - system.site
+partial_list: {  }
